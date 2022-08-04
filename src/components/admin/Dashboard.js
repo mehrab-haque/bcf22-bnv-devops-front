@@ -22,6 +22,7 @@ import AssessmentIcon from '@mui/icons-material/Assessment';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import {Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogTitle} from "@mui/material";
+import Courses from "./Courses";
 
 const drawerWidth = 240;
 
@@ -149,6 +150,15 @@ const Dashboard=props=>{
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
+
+
+                {
+                    menu===1?(
+                        <Courses/>
+                    ):(
+                        <div/>
+                    )
+                }
 
 
 
