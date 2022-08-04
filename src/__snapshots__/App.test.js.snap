@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App renders without crashing given the required props 1`] = `
+exports[`Component App Render renders without crashing given the required props 1`] = `
 <div>
   <ToastContainer
     autoClose={3000}
@@ -26,5 +26,79 @@ exports[`App renders without crashing given the required props 1`] = `
       path="/admin"
     />
   </Routes>
+</div>
+`;
+
+exports[`Component Auth Render renders without crashing given the required props 1`] = `
+<div>
+  <ForwardRef(Dialog)
+    open={true}
+  >
+    <div />
+    <ForwardRef(DialogTitle)>
+      Admin Login
+    </ForwardRef(DialogTitle)>
+    <ForwardRef(DialogContent)>
+      <ForwardRef(Grid)
+        container={true}
+        spacing={1}
+      >
+        <ForwardRef(Grid)
+          item={true}
+          xs={12}
+        >
+          <ForwardRef(TextField)
+            fullWidth={true}
+            inputRef={
+              Object {
+                "current": undefined,
+              }
+            }
+            label="Login"
+            variant="outlined"
+          />
+        </ForwardRef(Grid)>
+        <ForwardRef(Grid)
+          item={true}
+          xs={12}
+        >
+          <ForwardRef(TextField)
+            fullWidth={true}
+            inputRef={
+              Object {
+                "current": undefined,
+              }
+            }
+            label="Password"
+            type="password"
+            variant="outlined"
+          />
+        </ForwardRef(Grid)>
+      </ForwardRef(Grid)>
+    </ForwardRef(DialogContent)>
+    <ForwardRef(DialogActions)>
+      <ForwardRef(Button)
+        color="primary"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Login
+      </ForwardRef(Button)>
+    </ForwardRef(DialogActions)>
+  </ForwardRef(Dialog)>
+</div>
+`;
+
+exports[`Component Dashboard Render renders without crashing given the required props 1`] = `
+<div>
+  In Dashboard
+</div>
+`;
+
+exports[`Component Main Render renders without crashing given the required props 1`] = `
+<div>
+  <Auth
+    login={[Function]}
+  />
 </div>
 `;
