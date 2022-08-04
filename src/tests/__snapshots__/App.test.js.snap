@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component App Render renders without crashing given the required props 1`] = `
+<div>
+  <ToastContainer
+    autoClose={3000}
+    closeButton={[Function]}
+    closeOnClick={true}
+    draggable={true}
+    draggableDirection="x"
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="bottom-right"
+    role="alert"
+    rtl={false}
+    theme="light"
+    transition={[Function]}
+  />
+  <Routes>
+    <Route
+      element={<Main />}
+      exact={true}
+      path="/admin"
+    />
+  </Routes>
+</div>
+`;
