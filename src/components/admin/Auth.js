@@ -10,6 +10,7 @@ import {
     TextField
 } from "@mui/material";
 import {showToast} from "../../App";
+import {login} from "../../actions/admin/auth";
 
 const Auth=props=>{
 
@@ -18,12 +19,26 @@ const Auth=props=>{
 
     const [loading,setLoading]=useState(false)
 
-    const loginClick=()=>{
+    const loginClick=async ()=>{
         setLoading(true)
-        setTimeout(()=>{
+        var loginString=loginRef.current.value.trim()
+        var passString=passRef.current.value.trim()
+        if(loginString.length===0)
+            showToast("Login cannot be empty")
+        else if(passString.length===0)
+            showToast("Password cannot be empty")
+        else{
+            var res=await login(loginString,passString)
+            if(res===null)
+                showToast("Invalid credentials")
+            else{
+                showToast("Logged in successfully")
+                props.setToken(res.access_token)
+                console.log(res.access_token)
+                props.login()
+            }
             setLoading(false)
-            props.login()
-        }, 2000);
+        }
     }
 
 
