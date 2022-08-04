@@ -60,7 +60,7 @@ const Dashboard=props=>{
                     <ListItemIcon>
                         <AddAlertIcon/>
                     </ListItemIcon>
-                    <ListItemText primary={'Course Assignment'} />
+                    <ListItemText primary={'Courses Assignment'} />
                 </ListItem>
                 <Divider />
                 <ListItem button selected={menu===4} onClick={()=>{setMenu(4)}}>
