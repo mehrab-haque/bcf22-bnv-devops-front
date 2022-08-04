@@ -1,6 +1,10 @@
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import Main from "./components/Main";
+import {
+  Routes,
+  Route, useNavigate
+} from "react-router-dom";
+import Main from "./components/admin/Main";
 
 var showToast;
 
@@ -34,7 +38,9 @@ function App() {
           pauseOnHover
       />
 
-      <Main/>
+      <Routes>
+        <Route path="/admin" exact element={<Main />} />
+      </Routes>
 
     </div>
   );
