@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Dashboard Render renders without crashing given the required props 1`] = `
+<ForwardRef(Box)
+  sx={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <CssBaseline />
+  <ForwardRef(AppBar)
+    position="fixed"
+    style={
+      Object {
+        "backgroundColor": "#666666",
+      }
+    }
+    sx={
+      Object {
+        "ml": Object {
+          "sm": "240px",
+        },
+        "width": Object {
+          "sm": "calc(100% - 240px)",
+        },
+      }
+    }
+  >
+    <ForwardRef(Toolbar)>
+      <ForwardRef(IconButton)
+        aria-label="open drawer"
+        color="inherit"
+        edge="start"
+        onClick={[Function]}
+        sx={
+          Object {
+            "display": Object {
+              "sm": "none",
+            },
+            "mr": 2,
+          }
+        }
+      >
+        <Memo(ForwardRef(MenuIcon)) />
+      </ForwardRef(IconButton)>
+      <ForwardRef(Typography)
+        component="div"
+        noWrap={true}
+        variant="h6"
+      >
+        Admin Dashboard
+      </ForwardRef(Typography)>
+      <ForwardRef(IconButton)
+        aria-label="open drawer"
+        color="inherit"
+        edge="end"
+        sx={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
+      >
+        <Memo(ForwardRef(ExitToAppIcon)) />
+      </ForwardRef(IconButton)>
+    </ForwardRef(Toolbar)>
+  </ForwardRef(AppBar)>
+  <ForwardRef(Box)
+    aria-label="mailbox folders"
+    component="nav"
+    sx={
+      Object {
+        "flexShrink": Object {
+          "sm": 0,
+        },
+        "width": Object {
+          "sm": 240,
+        },
+      }
+    }
+  >
+    <ForwardRef(Drawer)
+      ModalProps={
+        Object {
+          "keepMounted": true,
+        }
+      }
+      onClose={[Function]}
+      open={false}
+      sx={
+        Object {
+          "& .MuiDrawer-paper": Object {
+            "boxSizing": "border-box",
+            "width": 240,
+          },
+          "display": Object {
+            "sm": "none",
+            "xs": "block",
+          },
+        }
+      }
+      variant="temporary"
+    >
+      <div>
+        <ForwardRef(Toolbar) />
+        <ForwardRef(List)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(ForumIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Merchants"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(LocationCityIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Riders"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(AddAlertIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Products"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(LocationCityIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Take Home Carts"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(DeliveryDiningIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Carts"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+        </ForwardRef(List)>
+      </div>
+    </ForwardRef(Drawer)>
+    <ForwardRef(Drawer)
+      open={true}
+      sx={
+        Object {
+          "& .MuiDrawer-paper": Object {
+            "boxSizing": "border-box",
+            "width": 240,
+          },
+          "display": Object {
+            "sm": "block",
+            "xs": "none",
+          },
+        }
+      }
+      variant="permanent"
+    >
+      <div>
+        <ForwardRef(Toolbar) />
+        <ForwardRef(List)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(ForumIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Merchants"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(LocationCityIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Riders"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(AddAlertIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Products"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(LocationCityIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Take Home Carts"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+          <ForwardRef(ListItem)
+            button={true}
+            onClick={[Function]}
+            selected={false}
+          >
+            <ForwardRef(ListItemIcon)>
+              <Memo(ForwardRef(DeliveryDiningIcon)) />
+            </ForwardRef(ListItemIcon)>
+            <ForwardRef(ListItemText)
+              primary="Carts"
+            />
+          </ForwardRef(ListItem)>
+          <ForwardRef(Divider) />
+        </ForwardRef(List)>
+      </div>
+    </ForwardRef(Drawer)>
+  </ForwardRef(Box)>
+  <ForwardRef(Box)
+    component="main"
+    sx={
+      Object {
+        "flexGrow": 1,
+        "p": 3,
+        "width": Object {
+          "sm": "calc(100% - 240px)",
+        },
+      }
+    }
+  >
+    <ForwardRef(Toolbar) />
+  </ForwardRef(Box)>
+</ForwardRef(Box)>
+`;

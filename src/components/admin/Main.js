@@ -11,11 +11,15 @@ const Main=()=>{
         setAuth(true)
     }
 
+    const logout=()=>{
+        setAuth(false)
+    }
+
     return(
         <div>
             {
                 isAuth?(
-                    <Dashboard/>
+                    <Dashboard logout={logout}/>
                 ):(
                     <Auth login={login}/>
                 )

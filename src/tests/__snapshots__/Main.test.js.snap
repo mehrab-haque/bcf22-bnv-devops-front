@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Main Render renders without crashing given the required props 1`] = `
+<div>
+  <Auth
+    login={[Function]}
+  />
+</div>
+`;
