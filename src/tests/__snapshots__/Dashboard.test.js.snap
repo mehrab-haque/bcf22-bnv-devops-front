@@ -114,7 +114,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(ForumIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Merchants"
+              primary="Courses"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(ListItem)
@@ -126,7 +126,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(LocationCityIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Riders"
+              primary="Students"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(Divider) />
@@ -139,20 +139,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(AddAlertIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Products"
-            />
-          </ForwardRef(ListItem)>
-          <ForwardRef(Divider) />
-          <ForwardRef(ListItem)
-            button={true}
-            onClick={[Function]}
-            selected={false}
-          >
-            <ForwardRef(ListItemIcon)>
-              <Memo(ForwardRef(LocationCityIcon)) />
-            </ForwardRef(ListItemIcon)>
-            <ForwardRef(ListItemText)
-              primary="Take Home Carts"
+              primary="Courses Assignment"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(Divider) />
@@ -165,7 +152,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(DeliveryDiningIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Carts"
+              primary="Result"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(Divider) />
@@ -201,7 +188,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(ForumIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Merchants"
+              primary="Courses"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(ListItem)
@@ -213,7 +200,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(LocationCityIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Riders"
+              primary="Students"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(Divider) />
@@ -226,20 +213,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(AddAlertIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Products"
-            />
-          </ForwardRef(ListItem)>
-          <ForwardRef(Divider) />
-          <ForwardRef(ListItem)
-            button={true}
-            onClick={[Function]}
-            selected={false}
-          >
-            <ForwardRef(ListItemIcon)>
-              <Memo(ForwardRef(LocationCityIcon)) />
-            </ForwardRef(ListItemIcon)>
-            <ForwardRef(ListItemText)
-              primary="Take Home Carts"
+              primary="Courses Assignment"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(Divider) />
@@ -252,7 +226,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
               <Memo(ForwardRef(DeliveryDiningIcon)) />
             </ForwardRef(ListItemIcon)>
             <ForwardRef(ListItemText)
-              primary="Carts"
+              primary="Result"
             />
           </ForwardRef(ListItem)>
           <ForwardRef(Divider) />
