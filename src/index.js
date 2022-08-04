@@ -5,7 +5,9 @@ import {BrowserRouter} from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-export const api_base_url='https://0a17-103-94-135-13.in.ngrok.io/api'
+//export const api_base_url='https://0a17-103-94-135-13.in.ngrok.io/api'
+export const api_base_url='http://bcf22bnv-env.eba-dktwj7xg.ap-south-1.elasticbeanstalk.com/api'
+
 
 
 var root
