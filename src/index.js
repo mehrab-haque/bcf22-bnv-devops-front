@@ -7,7 +7,14 @@ import reportWebVitals from './reportWebVitals';
 
 export const api_base_url='https://0a17-103-94-135-13.in.ngrok.io/api'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+var root
+
+try{
+    root= ReactDOM.createRoot(document.getElementById('root'));
+}catch(e){
+    root=ReactDOM.createRoot(document.createElement('root'));
+}
 root.render(
   <React.StrictMode>
       <BrowserRouter>

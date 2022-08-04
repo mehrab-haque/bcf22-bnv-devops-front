@@ -47,6 +47,18 @@ const Courses= props=>{
 
     }
 
+    const updateCourse=(id,content)=>{
+        var arr=[]
+        courses.map(c=>{
+            if(c.id!==id)
+                arr.push(c)
+            else{
+                arr.push(content)
+            }
+        })
+        setCourses([...arr])
+    }
+
     useEffect(()=>{
         fetchAllCourses()
     },[])
@@ -70,7 +82,7 @@ const Courses= props=>{
                 courses.map(c=>{
                     return(
                         <Grid item xs={12} md={4}>
-                            <Course delete={deleteCourse} key={c.id} course={c}/>
+                            <Course update={updateCourse} delete={deleteCourse} key={c.id} course={c}/>
                         </Grid>
                     )
                 })
@@ -106,6 +118,11 @@ const Course=props=>{
             showToast("Cannot update course")
         }else{
             showToast("Course updated successfully")
+            props.update(props.course.id,{
+                id:props.course.id,
+                name:nameRef.current.value,
+                description:descRef.current.value
+            })
         }
         setLoading(false)
     }
