@@ -85,7 +85,7 @@ const Auth=props=>{
                     </Button>
                 </DialogActions>
             </Dialog>
-        </div
+        </div>
     )
 }
 
