@@ -1,3 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component Courses Render renders without crashing given the required props 1`] = `<div />`;
+exports[`Component Courses Render renders without crashing given the required props 1`] = `
+<ForwardRef(Grid)
+  container={true}
+  spacing={1}
+>
+  <ForwardRef(Grid)
+    item={true}
+    md={3}
+    xs={12}
+  >
+    <ForwardRef(Button)
+      color="primary"
+      disabled={false}
+      fullWidth={true}
+      onClick={[Function]}
+      variant="outlined"
+    >
+      Add Course
+    </ForwardRef(Button)>
+  </ForwardRef(Grid)>
+  <ForwardRef(Grid)
+    item={true}
+    md={9}
+    xs={0}
+  />
+</ForwardRef(Grid)>
+`;

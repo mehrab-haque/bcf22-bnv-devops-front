@@ -4,6 +4,7 @@ exports[`Component Main Render renders without crashing given the required props
 <div>
   <Auth
     login={[Function]}
+    setToken={[Function]}
   />
 </div>
 `;

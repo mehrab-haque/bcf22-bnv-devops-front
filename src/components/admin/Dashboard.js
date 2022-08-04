@@ -26,7 +26,6 @@ import Courses from "./Courses";
 
 const drawerWidth = 240;
 
-var showCart
 
 const Dashboard=props=>{
     const { window } = props;
@@ -177,4 +176,3 @@ Dashboard.propTypes = {
 };
 
 export default Dashboard
-export {showCart}

@@ -34,7 +34,6 @@ const Auth=props=>{
             else{
                 showToast("Logged in successfully")
                 props.setToken(res.access_token)
-                console.log(res.access_token)
                 props.login()
             }
             setLoading(false)

@@ -247,6 +247,7 @@ exports[`Component Dashboard Render renders without crashing given the required 
     }
   >
     <ForwardRef(Toolbar) />
+    <div />
   </ForwardRef(Box)>
 </ForwardRef(Box)>
 `;
