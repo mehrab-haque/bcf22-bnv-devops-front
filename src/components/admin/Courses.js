@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import {Button, Grid, Paper, TextField} from "@mui/material";
+import {Button, Grid, LinearProgress, Paper, TextField} from "@mui/material";
 import {addCourse, deleteCourse, fetchCourses, updateCourse} from "../../actions/admin/courses";
 import {getToken} from "./Main";
 import {showToast} from "../../App";
@@ -8,18 +8,18 @@ import Typography from "@mui/material/Typography";
 const Courses= props=>{
 
     const [loading,setLoading]=useState(false)
+    const [initialLoading,setInitialLoading]=useState(true)
 
     const [courses,setCourses]=useState([])
 
     const fetchAllCourses=async ()=>{
-        setLoading(true)
         var res=await fetchCourses(getToken())
         console.log(res)
         if(res===null)
             showToast("Access denied")
         else
             setCourses(res)
-        setLoading(false)
+        setInitialLoading(false)
     }
 
     const addCourseClick=async ()=>{
@@ -65,28 +65,41 @@ const Courses= props=>{
 
     return(
         <Grid container spacing={1}>
-            <Grid item xs={12} md={3}>
-                <Button
-                    fullWidth
-                    disabled={loading}
-                    variant={'outlined'}
-                    color={'primary'}
-                    onClick={addCourseClick}
-                    >
-                    Add Course
-                </Button>
-            </Grid>
-            <Grid item xs={0} md={9}/>
-
             {
-                courses.map(c=>{
-                    return(
-                        <Grid item xs={12} md={4}>
-                            <Course update={updateCourse} delete={deleteCourse} key={c.id} course={c}/>
+                initialLoading?(
+                        <Grid item xs={12} >
+                            <LinearProgress/>
+
                         </Grid>
-                    )
-                })
+
+                ):(
+                    <>
+                        <Grid item xs={12} md={3}>
+                            <Button
+                                fullWidth
+                                disabled={loading}
+                                variant={'outlined'}
+                                color={'primary'}
+                                onClick={addCourseClick}
+                            >
+                                Add Course
+                            </Button>
+                        </Grid>
+                        <Grid item xs={0} md={9}/>
+
+                        {
+                            courses.map(c=>{
+                                return(
+                                    <Grid item xs={12} md={4}>
+                                        <Course update={updateCourse} delete={deleteCourse} key={c.id} course={c}/>
+                                    </Grid>
+                                )
+                            })
+                        }
+                    </>
+                )
             }
+
 
         </Grid>
     )
