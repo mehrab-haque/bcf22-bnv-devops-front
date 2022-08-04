@@ -28,3 +28,106 @@ exports[`App renders without crashing given the required props 1`] = `
   </Routes>
 </div>
 `;
+
+exports[`Component App Render renders without crashing given the required props 1`] = `
+<div>
+  <ToastContainer
+    autoClose={3000}
+    closeButton={[Function]}
+    closeOnClick={true}
+    draggable={true}
+    draggableDirection="x"
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="bottom-right"
+    role="alert"
+    rtl={false}
+    theme="light"
+    transition={[Function]}
+  />
+  <Routes>
+    <Route
+      element={<Main />}
+      exact={true}
+      path="/admin"
+    />
+  </Routes>
+</div>
+`;
+
+exports[`Component Auth Render renders without crashing given the required props 1`] = `
+<div>
+  <ForwardRef(Dialog)
+    open={true}
+  >
+    <div />
+    <ForwardRef(DialogTitle)>
+      Admin Login
+    </ForwardRef(DialogTitle)>
+    <ForwardRef(DialogContent)>
+      <ForwardRef(Grid)
+        container={true}
+        spacing={1}
+      >
+        <ForwardRef(Grid)
+          item={true}
+          xs={12}
+        >
+          <ForwardRef(TextField)
+            fullWidth={true}
+            inputRef={
+              Object {
+                "current": undefined,
+              }
+            }
+            label="Login"
+            variant="outlined"
+          />
+        </ForwardRef(Grid)>
+        <ForwardRef(Grid)
+          item={true}
+          xs={12}
+        >
+          <ForwardRef(TextField)
+            fullWidth={true}
+            inputRef={
+              Object {
+                "current": undefined,
+              }
+            }
+            label="Password"
+            type="password"
+            variant="outlined"
+          />
+        </ForwardRef(Grid)>
+      </ForwardRef(Grid)>
+    </ForwardRef(DialogContent)>
+    <ForwardRef(DialogActions)>
+      <ForwardRef(Button)
+        color="primary"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Login
+      </ForwardRef(Button)>
+    </ForwardRef(DialogActions)>
+  </ForwardRef(Dialog)>
+</div>
+`;
+
+exports[`Component Dashboard Render renders without crashing given the required props 1`] = `
+<div>
+  In Dashboard
+</div>
+`;
+
+exports[`Component Main Render renders without crashing given the required props 1`] = `
+<div>
+  <Auth
+    login={[Function]}
+  />
+</div>
+`;
