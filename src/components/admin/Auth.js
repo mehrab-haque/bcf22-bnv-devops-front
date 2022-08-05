@@ -52,7 +52,7 @@ const Auth=props=>{
                     )
                 }
                 <DialogTitle>
-                    Admin Login
+                    Admin Login Change
                 </DialogTitle>
                 <DialogContent>
                     <Grid container spacing={1}>
