@@ -6,7 +6,9 @@ exports[`Component Auth Render renders without crashing given the required props
     open={true}
   >
     <div />
-    <ForwardRef(DialogTitle)>
+    <ForwardRef(DialogTitle)
+      className="end-to-end-auth-selector"
+    >
       Admin Login
     </ForwardRef(DialogTitle)>
     <ForwardRef(DialogContent)>

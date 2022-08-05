@@ -42,7 +42,7 @@ const Auth=props=>{
 
 
     return(
-        <div>
+        <div >
             <Dialog open={true}>
                 {
                     loading?(
@@ -51,8 +51,8 @@ const Auth=props=>{
                         <div/>
                     )
                 }
-                <DialogTitle>
-                    Admin Login Change
+                <DialogTitle className={'end-to-end-auth-selector'}>
+                    Admin Login
                 </DialogTitle>
                 <DialogContent>
                     <Grid container spacing={1}>

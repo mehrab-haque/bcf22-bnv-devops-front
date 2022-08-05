@@ -24,6 +24,8 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import {Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogTitle} from "@mui/material";
 import Courses from "./Courses";
 import Students from "./Students";
+import Assignments from "./Assignments";
+import Results from "./Results";
 
 const drawerWidth = 240;
 
@@ -159,7 +161,15 @@ const Dashboard=props=>{
                         menu===2?(
                             <Students/>
                         ):(
-                            <div/>
+                            menu===3?(
+                                <Assignments/>
+                            ):(
+                                menu===4?(
+                                    <Results/>
+                                ):(
+                                    <div/>
+                                )
+                            )
                         )
                     )
                 }
